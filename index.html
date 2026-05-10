@@ -2,166 +2,594 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ATOM.com is a web page about ATOM, that helps to create web pages with advanced Technology and optimized modules">
-  
-    <link rel="shortcut icon" href="./img/ATOM devs logo.png" type="image/x-icon">
-    <title>PORTFOLIO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="G'iyosbek Qodirberganov — Frontend Developer portfolio. React, Next.js, and modern web technologies.">
+  <meta name="keywords" content="frontend developer, React, Next.js, portfolio, Giyosbek Qodirberganov">
+  <link rel="shortcut icon" href="./img/ATOM devs logo.png" type="image/x-icon">
+  <title>G'iyosbek — Frontend Developer</title>
 
-    <!-- google fonts links -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Merienda:wght@300..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sirin+Stencil&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- css links -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="intro">
-    <img src="./img/vlogger.gif" alt="">
-    <pre>
-Hi, 
-I am G'iyosbek
-Web Developer
-    </pre>
-</nav>
+  <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-<section class="about">
-<h1>About me </h1>
-<p>I’m G’iyosbek Qodirberganov, born in 2006. <br>
-My interest in programming began in 2021 when I joined the <strong>DATA Learning Centre</strong>. I chose frontend development because seeing what I build come to life visually motivates me and helps me work faster.
-<br>
-While preparing for university and my IELTS exam, I had to pause coding for a while. But after entering university, I restarted from scratch and continued learning with more focus and purpose.
-<br>
-Now I can confidently say that I know how to code. I don’t claim to be a master yet, but I understand what I’m doing and keep on improving every day. </p>
-</section>
-
-<section class="background">
-    <h1>Education</h1>
-    <div>
-        <span>2024</span>
-        <p>IELTS: <strong>6.5</strong></p>
-        <a download href="./img/20251118_151333.jpg">Download IELTS certificate</a>
+  <!-- ===== NAV ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo" id="logoLink">
+        <span class="logo-bracket">&lt;</span>G<span class="logo-accent">'</span>iyosbek<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="header-nav" id="headerNav">
+        <a href="#about" id="navAbout">About</a>
+        <a href="#skills" id="navSkills">Skills</a>
+        <a href="#projects" id="navProjects">Projects</a>
+        <a href="#contact" id="navContact">Contact</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div>
-        <span>2024</span>
-        <p>Graduated from school</p>
-    </div>
-    <div>
-        <span>2024</span>
-        <p>Freshman at TSUE, Marketing faculty</p>
-    </div>
+  </header>
 
-    <h1>Experience</h1>
-    <p>I’m currently a solo developer and have built multiple projects independently. Working alone has helped me develop strong problem-solving skills and the ability to learn new technologies quickly. I’m now looking forward to joining a team to grow further and gain real-world experience.</p>
-</section>
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" id="mNavAbout">About</a>
+    <a href="#skills" id="mNavSkills">Skills</a>
+    <a href="#projects" id="mNavProjects">Projects</a>
+    <a href="#contact" id="mNavContact">Contact</a>
+  </div>
 
-<section class="projects">
-    <h1>Projects</h1>
-    <div>
-        <a target="_blank" href="https://youtune-copy.netlify.app/">YouTune</a>
-        <p>In this project, I tried to clone YouTube as much as I could. You can log into your account and see your subscribed channels and recommended videos.</p>
-    </div>
-
-    <div>
-        <a target="_blank" href="https://cooking-chief.netlify.app/">Cooking Chief</a>
-        <p> You can type ingredients or a food name to get a recipe. This web page shows project integration with AI models. I focused on functionality rather than style because of not enoug time.</p>
-    </div>
-
-    <div>
-        <a target="_blank" href="https://movie-search-atom.netlify.app/">Movie Search</a>
-        <p>This webpage shows the trailer and movie information. This web page shows project integration with API.</p>
-    </div>
-
-    <div>
-        <a target="_blank" href="https://cleaning-copy.netlify.app/">Cleaning Webpage</a>
-        <p>This is a read-only webpage with clean animations and design. Whole project styling done with Tailwind css.</p>
-    </div>
-
-    <div>
-        <a target="_blank" href="https://ielts-mania.netlify.app/">IELTS Mania</a>
-        <p>This webpage allows users to enroll in an English course. After submitting the form, the data is sent to a Telegram group so admins can contact them. I built this a few years ago with less experience, mainly for testing.</p>
-    </div>
-
-    <div>
-        <a target="_blank" href="https://photography-simple.netlify.app/">Photographing</a>
-        <p>A simple webpage with entry-level styling.</p>
-    </div>
-
-    <div class="extra_projects">
-        <div class="small_projects">
-            <p>Here are some smaller projects</p>
-            <div class="column">
-                <div>
-                    <a target="_blank" href="https://qodirberganov0622-travel-agency.netlify.app/">Travel agency</a>
-                    <a target="_blank" href="https://rm-newsgrit.netlify.app/">News Grid</a>
-                    <a target="_blank" href="https://qodirberganov0622-bekagency.netlify.app/">Bek agency</a>
-                    <a target="_blank" href="https://rm-bootstrap.netlify.app/">Bootstrap project</a>
-                </div>
-                <div>
-                    <a target="_blank" href="https://qodirberganov0622-portfolio.netlify.app/">Small demo portfolio</a>
-                    <a target="_blank" href="https://app.netlify.com/projects/qodirberganov0622-edge-leadger/">Edge Ledger</a>
-                    <a target="_blank" href="https://qodirberganov0622-hotel-web-site.netlify.app/">Hotel webpage</a>
-                </div>
-            </div>
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-greeting">Hi, I'm</span>
+        <span class="hero-name">G'iyosbek</span>
+        <span class="hero-role">
+          <span class="typed-text" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </span>
+      </h1>
+      <p class="hero-desc">
+        Frontend Developer crafting fast, beautiful, and user-centred web experiences using React, Next.js, and modern tooling.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="heroViewWork">View My Work</a>
+        <a href="#contact" class="btn btn-ghost" id="heroContact">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects Built</span>
         </div>
-
-        <div class="small_projects">
-            <p>Here are some projects that I’m currently working on.</p>
-            <a target="_blank" href="https://chic-torte-34524a.netlify.app/">Amazon clone</a>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Tech Stack</span>
         </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Years Learning</span>
+        </div>
+      </div>
     </div>
-</section>
-
-<section class="skills">
-    <h1>Skills</h1>
-    <div>
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>SCSS</p>
-        <p>Tailwind CSS</p>
-        <p>Bootstrap</p>
-        <p>Javascript</p>
-        <p>React js</p>
-        <p>React Router</p>
-        <p>Async & Await</p>
-        <p>Axios</p>
-        <p>Framer Motion</p>
-        <p>Javascript DOM</p>
-        <p>Git</p>
-        <p>Tailwind Vite</p>
-        <p>REST API</p>
-        <p>Hosting</p>
-        <p>Responsive Design</p>
-        <p>Reusable components</p>
-        <p>Lighthouse improvements</p>
-        <p>Performance optimizations</p>
-        <p>Local storage</p>
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <img src="./img/vlogger.gif" alt="G'iyosbek" class="avatar-img" id="heroAvatar">
+        <div class="avatar-badge-react">⚛️ React</div>
+        <div class="avatar-badge-next">▲ Next.js</div>
+        <div class="avatar-badge-js">JS</div>
+      </div>
     </div>
-</section>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-<footer>
+  <!-- ===== ABOUT ===== -->
+  <section class="section about-section" id="about">
     <div class="container">
-        <div>
-            <img src="./img/github.svg" alt="">
-            <a target="_blank" href="https://github.com/giyosbek0804">GitHub</a>
+      <div class="section-label">01 — About Me</div>
+      <h2 class="section-title">Who Am I?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>G'iyosbek Qodirberganov</strong>, born in 2006 — a self-driven frontend developer from Uzbekistan. My programming journey started in 2021 when I joined the <strong>DATA Learning Centre</strong> and immediately fell in love with frontend development — seeing my ideas come to life visually keeps me motivated.
+          </p>
+          <p>
+            After a pause for my IELTS exam (scored <strong>6.5</strong>) and university entrance, I came back stronger. I'm now a freshman at <strong>TSUE, Marketing faculty</strong> and coding every day with more focus and clarity.
+          </p>
+          <p>
+            I build projects solo — which has sharpened my problem-solving skills and ability to pick up new tech fast. I'm ready to join a team and grow further.
+          </p>
+          <div class="about-tags">
+            <span>🎓 TSUE Freshman</span>
+            <span>📍 Uzbekistan</span>
+            <span>🌐 IELTS 6.5</span>
+            <span>💻 Solo Developer</span>
+          </div>
+        </div>
+        <div class="education-timeline">
+          <h3 class="timeline-heading">Education & Background</h3>
+          <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Started Programming</div>
+              <div class="timeline-sub">DATA Learning Centre — Frontend Development</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <div class="timeline-title">IELTS Certificate</div>
+              <div class="timeline-sub">Overall Band Score: <strong>6.5</strong></div>
+              <a download href="./img/20251118_151333.jpg" class="timeline-link">Download Certificate →</a>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Graduated High School</div>
+              <div class="timeline-sub">Entered TSUE — Marketing Faculty</div>
+            </div>
+          </div>
+          <div class="timeline-item active">
+            <div class="timeline-year">Now</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Active Developer</div>
+              <div class="timeline-sub">Building projects & seeking team opportunities</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">What I Work With</h2>
+
+      <!-- Skill bars -->
+      <div class="skill-bars" id="skillBars">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Core Technologies</h3>
+          <div class="skill-bar-list">
+
+            <div class="skill-bar-item" data-percent="90">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">🌐</span> HTML5 / CSS3</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="85">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">⚡</span> JavaScript (ES6+)</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="70">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">🎨</span> Styling (SCSS / Tailwind / Bootstrap)</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div>
-            <img src="./img/telegram.svg" alt="">
-            <a target="_blank" href="https://t.me//giyosbek3222">Telegram</a>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frameworks & Libraries</h3>
+          <div class="skill-bar-list">
+
+            <div class="skill-bar-item" data-percent="40">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">⚛️</span> React.js</span>
+                <span class="skill-percent">40%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="40"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="50">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">▲</span> Next.js</span>
+                <span class="skill-percent">50%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="50"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="65">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">🎭</span> Framer Motion</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="60">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">🧩</span> ShadCN UI</span>
+                <span class="skill-percent">60%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="60"></div>
+              </div>
+            </div>
+
+          </div>
         </div>
-    </div>
 
-    <div>
-        <p>Created by G'iyosbek Qodirberganov. © 2025 All rights reserved.</p>
-    </div>
-</footer>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Tools & Concepts</h3>
+          <div class="skill-bar-list">
 
-<script src="./index.js"></script>
+            <div class="skill-bar-item" data-percent="80">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">🧠</span> Problem Solving</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="75">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">🔌</span> REST API / Axios</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="70">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">🐙</span> Git & GitHub</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="65">
+              <div class="skill-bar-header">
+                <span class="skill-name"><span class="skill-icon">🔥</span> Firebase</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skill tags cloud -->
+      <div class="skill-tags-section">
+        <h3 class="skill-cat-title">Also familiar with</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">React Router</span>
+          <span class="skill-tag">Zustand</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Reusable Components</span>
+          <span class="skill-tag">Local Storage</span>
+          <span class="skill-tag">Performance Optimization</span>
+          <span class="skill-tag">Lighthouse</span>
+          <span class="skill-tag">Vercel / Netlify</span>
+          <span class="skill-tag">Async / Await</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">SCSS / Sass</span>
+          <span class="skill-tag">Bootstrap</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <p class="section-sub">A selection of my recent projects — click any preview to visit live.</p>
+
+      <!-- Project: Movie Search -->
+      <div class="project-card" id="proj-movie">
+        <div class="project-preview">
+          <div class="iframe-wrapper">
+            <iframe src="https://movie-search-dummy.vercel.app/" title="Movie Search App" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+            <div class="iframe-overlay" onclick="window.open('https://movie-search-dummy.vercel.app/', '_blank')">
+              <span class="iframe-overlay-text">🚀 Open Live</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-number">01</div>
+          <h3 class="project-title">Movie Search</h3>
+          <p class="project-desc">
+            A full-featured movie platform powered by a real movie database API. Browse trending movies, view detailed information, trailers, release dates, and ratings — all in a slick dark-mode interface with responsive grid layout.
+          </p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>REST API</span>
+            <span>CSS</span>
+            <span>Async/Await</span>
+          </div>
+          <div class="project-links">
+            <a href="https://movie-search-dummy.vercel.app/" target="_blank" class="project-link-btn primary" id="movieLiveLink">Live Demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: YouTune -->
+      <div class="project-card reverse" id="proj-youtune">
+        <div class="project-preview">
+          <div class="iframe-wrapper">
+            <iframe src="https://youtune-woad.vercel.app/" title="YouTune YouTube Clone" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+            <div class="iframe-overlay" onclick="window.open('https://youtune-woad.vercel.app/', '_blank')">
+              <span class="iframe-overlay-text">🚀 Open Live</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-number">02</div>
+          <h3 class="project-title">YouTune</h3>
+          <p class="project-desc">
+            A YouTube clone with real Google authentication. Users can log in, view their subscribed channels, browse recommended videos, and filter by category — all with a faithful recreation of the YouTube dark-mode UI including sidebar, search, and video grid.
+          </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>YouTube API</span>
+            <span>Firebase Auth</span>
+            <span>SCSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://youtune-woad.vercel.app/" target="_blank" class="project-link-btn primary" id="youtuneLiveLink">Live Demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: Cleaning -->
+      <div class="project-card" id="proj-cleaning">
+        <div class="project-preview">
+          <div class="iframe-wrapper">
+            <iframe src="https://cleaning-webpage.vercel.app/index.html" title="Cleaning Service Landing Page" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+            <div class="iframe-overlay" onclick="window.open('https://cleaning-webpage.vercel.app/index.html', '_blank')">
+              <span class="iframe-overlay-text">🚀 Open Live</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-number">03</div>
+          <h3 class="project-title">Cleaning Service</h3>
+          <p class="project-desc">
+            A polished, professional landing page for a cleaning business. Features smooth scroll animations, a hero section with a clear CTA, service cards, and a fully responsive layout — styled entirely with Tailwind CSS for pixel-perfect consistency across all devices.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>Tailwind CSS</span>
+            <span>Animations</span>
+            <span>Responsive</span>
+          </div>
+          <div class="project-links">
+            <a href="https://cleaning-webpage.vercel.app/index.html" target="_blank" class="project-link-btn primary" id="cleaningLiveLink">Live Demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: Gourmet AI -->
+      <div class="project-card reverse" id="proj-cooking">
+        <div class="project-preview">
+          <div class="iframe-wrapper">
+            <iframe src="https://cooking-five-zeta.vercel.app/" title="Gourmet AI Cooking App" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+            <div class="iframe-overlay" onclick="window.open('https://cooking-five-zeta.vercel.app/', '_blank')">
+              <span class="iframe-overlay-text">🚀 Open Live</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-number">04</div>
+          <h3 class="project-title">Gourmet AI</h3>
+          <p class="project-desc">
+            An AI-powered cooking assistant. Type in ingredients you have at home and the app generates a full recipe — ingredients, steps, and tips — using a generative AI model. Demonstrates prompt engineering and real AI API integration in a clean, minimal interface.
+          </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Gemini AI</span>
+            <span>API Integration</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://cooking-five-zeta.vercel.app/" target="_blank" class="project-link-btn primary" id="cookingLiveLink">Live Demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: All-in-One Tasks -->
+      <div class="project-card" id="proj-tasks">
+        <div class="project-preview">
+          <div class="iframe-wrapper">
+            <iframe src="https://all-in-one-tasks.vercel.app/" title="All-in-One Task Manager" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+            <div class="iframe-overlay" onclick="window.open('https://all-in-one-tasks.vercel.app/', '_blank')">
+              <span class="iframe-overlay-text">🚀 Open Live</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-number">05</div>
+          <h3 class="project-title">All-In-One Tasks</h3>
+          <p class="project-desc">
+            A full-stack productivity app built with Next.js and Firebase. Features Google & Apple authentication, private per-user task management, status-based filtering (Active / Snoozed / Archived), deadline tracking with real-time notifications, and a polished dark-mode UI.
+          </p>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>Firebase</span>
+            <span>Zustand</span>
+            <span>TypeScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://all-in-one-tasks.vercel.app/" target="_blank" class="project-link-btn primary" id="tasksLiveLink">Live Demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Work -->
+      <div class="more-work-section">
+        <h3 class="more-work-title">More Work</h3>
+        <div class="more-work-grid">
+
+          <!-- Corporate: Startupbase.uz -->
+          <div class="more-card corporate" id="moreStartupbase">
+            <div class="more-card-header">
+              <div class="more-card-badge corporate-badge">🏢 Corporate · 6 months</div>
+              <div class="more-card-status">In Progress</div>
+            </div>
+            <h4 class="more-card-title">Startupbase.uz — Rebuild</h4>
+            <p class="more-card-org">Uzinfocom · Tashkent</p>
+            <p class="more-card-desc">
+              I'm currently rebuilding <strong>startupbase.uz</strong> from scratch at <strong>Uzinfocom</strong> as part of a corporate development team — my first professional collaborative engineering experience after 6 months at the organisation. The platform is a national startup ecosystem hub featuring investor matching, mentorship, a knowledge base, events management, and full multi-language support (EN / RU / UZ). Working here has pushed me to write production-grade, scalable frontend code alongside senior engineers and operate in a professional team environment.
+            </p>
+            <div class="more-card-tech">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>next-intl</span>
+              <span>REST API</span>
+              <span>SCSS Modules</span>
+              <span>Team Collaboration</span>
+            </div>
+          </div>
+
+          <!-- Personal: All-in-One App -->
+          <div class="more-card personal" id="moreAllinOne">
+            <div class="more-card-header">
+              <div class="more-card-badge personal-badge">⚡ Personal · Ongoing</div>
+              <div class="more-card-status building">Building</div>
+            </div>
+            <h4 class="more-card-title">All-in-One App</h4>
+            <p class="more-card-org">Finance + Tasks · AI-powered</p>
+            <p class="more-card-desc">
+              A personal super-app merging <strong>smart finance tracking</strong> with <strong>task management</strong>. Set a budget, log expenses, and the app intelligently tracks your spending. Running low? It scans past food &amp; purchase records and suggests cheaper alternatives — <em>"you could try this meal, it costs less."</em>
+              <br><br>
+              Set a savings goal (e.g. buy a new phone) and the app calculates a daily spending limit, recommends cost-saving habits, and nudges you toward that target. On the tasks side, adding "groceries" as a task triggers a finance prompt — <em>"Add expenses for groceries?"</em> — so spending is captured automatically and patterns build up over time to give smarter suggestions and reach your financial goals.
+              <br><br>
+              Building this has sharpened skills in: AI prompt engineering &amp; API quota management, smart Firebase caching strategies, deep understanding of Next.js SSR vs. CSR vs. hybrid rendering, Zustand state architecture for complex data flows, and real-world problem solving for production-grade features.
+            </p>
+            <div class="more-card-tech">
+              <span>Next.js</span>
+              <span>Firebase</span>
+              <span>Gemini AI</span>
+              <span>Zustand</span>
+              <span>TypeScript</span>
+              <span>SSR / CSR</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-sub contact-sub">I'm open to internships, freelance projects, and team opportunities. Reach out anytime!</p>
+      <div class="contact-grid">
+        <a href="https://github.com/giyosbek0804" target="_blank" class="contact-card" id="contactGitHub">
+          <div class="contact-card-icon">
+            <img src="./img/github.svg" alt="GitHub">
+          </div>
+          <div class="contact-card-info">
+            <div class="contact-card-label">GitHub</div>
+            <div class="contact-card-value">@giyosbek0804</div>
+          </div>
+          <span class="contact-card-arrow">↗</span>
+        </a>
+        <a href="https://gitlab.com/giyosbekkodirberganov" target="_blank" class="contact-card" id="contactGitLab">
+          <div class="contact-card-icon gitlab-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51a.42.42 0 0 1 .11-.18.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" fill="#fc6d26"/>
+            </svg>
+          </div>
+          <div class="contact-card-info">
+            <div class="contact-card-label">GitLab</div>
+            <div class="contact-card-value">@giyosbekkodirberganov</div>
+          </div>
+          <span class="contact-card-arrow">↗</span>
+        </a>
+        <a href="https://t.me/giyosbek3222" target="_blank" class="contact-card" id="contactTelegram">
+          <div class="contact-card-icon lucide-icon">
+            <i data-lucide="send"></i>
+          </div>
+          <div class="contact-card-info">
+            <div class="contact-card-label">Telegram</div>
+            <div class="contact-card-value">@giyosbek3222</div>
+          </div>
+          <span class="contact-card-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">
+        <span class="logo-bracket">&lt;</span>G<span class="logo-accent">'</span>iyosbek<span class="logo-bracket">/&gt;</span>
+      </span>
+      <p class="footer-copy">© 2025 G'iyosbek Qodirberganov. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 
 </html>
