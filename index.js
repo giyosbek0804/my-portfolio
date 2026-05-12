@@ -57,7 +57,7 @@ document.head.appendChild(style);
 
 /* ===== SCROLL REVEAL ===== */
 const revealEls = document.querySelectorAll(
-  '.about-grid, .skill-category, .project-card, .small-project-card, .contact-card, .timeline-item, .section-title, .section-label'
+  '.about-grid, .skill-category, .project-card, .small-project-card, .contact-card, .timeline-item, .section-title, .section-label, .case-study-card'
 );
 revealEls.forEach(el => el.classList.add('reveal'));
 

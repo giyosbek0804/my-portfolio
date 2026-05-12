@@ -35,6 +35,7 @@
       <nav class="header-nav" id="headerNav">
         <a href="#about" id="navAbout">About</a>
         <a href="#skills" id="navSkills">Skills</a>
+        <a href="#solving" id="navSolving">Solving</a>
         <a href="#projects" id="navProjects">Projects</a>
         <a href="#contact" id="navContact">Contact</a>
       </nav>
@@ -48,6 +49,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#about" id="mNavAbout">About</a>
     <a href="#skills" id="mNavSkills">Skills</a>
+    <a href="#solving" id="mNavSolving">Solving</a>
     <a href="#projects" id="mNavProjects">Projects</a>
     <a href="#contact" id="mNavContact">Contact</a>
   </div>
@@ -332,10 +334,72 @@
     </div>
   </section>
 
+  <!-- ===== PROBLEM SOLVING ===== -->
+  <section class="section solving-section" id="solving">
+    <div class="container">
+      <div class="section-label">03 — Problem Solving</div>
+      <h2 class="section-title">Technical Challenges</h2>
+      <p class="section-sub">Real-world engineering problems I've encountered and the creative solutions I implemented to overcome them.</p>
+
+      <div class="case-study-card">
+        <div class="cs-header">
+          <div class="cs-icon-box">
+            <i data-lucide="zap"></i>
+          </div>
+          <div class="cs-title-area">
+            <h3 class="cs-title">YouTune: Solving API Quota Exhaustion</h3>
+            <div class="cs-tags">
+              <span>Performance Optimization</span>
+              <span>API Design</span>
+              <span>Firebase Caching</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-content-grid">
+          <div class="cs-column">
+            <div class="cs-step">
+              <div class="cs-step-label challenge"><i data-lucide="alert-circle"></i> The Challenge</div>
+              <p>Fetching home feeds for 100+ subscriptions using the standard YouTube Search API was consuming thousands of quota units per minute, quickly leading to <code>429: Too Many Requests</code> errors and app shutdown for users.</p>
+            </div>
+          </div>
+          <div class="cs-column">
+            <div class="cs-step">
+              <div class="cs-step-label solution"><i data-lucide="check-circle"></i> The "UU" Hack Solution</div>
+              <p>Discovered that every channel ID (<code>UC...</code>) has a matching "Uploads" playlist ID (<code>UU...</code>). By converting the ID and using <code>playlistItems.list</code> instead of search, I reduced the quota cost from <strong>100 units</strong> to <strong>1 unit</strong> per fetch.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-footer">
+          <div class="cs-result">
+            <div class="cs-result-item">
+              <span class="cs-result-num">99%</span>
+              <span class="cs-result-label">Quota Reduction</span>
+            </div>
+            <div class="cs-result-divider"></div>
+            <div class="cs-result-item">
+              <span class="cs-result-num">48h</span>
+              <span class="cs-result-label">Firebase Cache</span>
+            </div>
+            <div class="cs-result-divider"></div>
+            <div class="cs-result-item">
+              <span class="cs-result-num">Instant</span>
+              <span class="cs-result-label">Feed Loading</span>
+            </div>
+          </div>
+          <div class="cs-desc-detailed">
+            I implemented a <strong>multi-layer caching strategy</strong>: the app fetches ~120 videos once, stores them in <strong>Firestore</strong> with a 48-hour timestamp, and serves them locally. This combination of the "UU" hack and persistent caching turned a budget-breaking problem into a high-performance feature.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== PROJECTS ===== -->
   <section class="section projects-section" id="projects">
     <div class="container">
-      <div class="section-label">03 — Projects</div>
+      <div class="section-label">04 — Projects</div>
       <h2 class="section-title">What I've Built</h2>
       <p class="section-sub">A selection of my recent projects — click any preview to visit live.</p>
 
@@ -538,7 +602,7 @@
   <!-- ===== CONTACT ===== -->
   <section class="section contact-section" id="contact">
     <div class="container">
-      <div class="section-label">04 — Contact</div>
+      <div class="section-label">05 — Contact</div>
       <h2 class="section-title">Let's Connect</h2>
       <p class="section-sub contact-sub">I'm open to internships, freelance projects, and team opportunities. Reach out anytime!</p>
       <div class="contact-grid">
